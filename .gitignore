@@ -1,0 +1,18 @@
+# Editor directories
+.cursor/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node modules (si en el futuro se agregan)
+node_modules/
+
+# Build outputs (si en el futuro se agregan)
+dist/
+build/
+
