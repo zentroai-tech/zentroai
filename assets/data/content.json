@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "title": "Zentro AI — Agents & Automation",
+    "description": "Zentro AI - Agents & Automation. Agentes con IA + automatización n8n: WhatsApp, leads, turnos, reportes e integraciones.",
+    "og": {
+      "url": "https://zentroai.com/",
+      "title": "Zentro AI — Agents & Automation",
+      "description": "Agentes con IA + automatización n8n: WhatsApp, leads, turnos, reportes e integraciones.",
+      "image": "https://zentroai.com/assets/img/logo.png",
+      "locale": "es_ES"
+    },
+    "twitter": {
+      "url": "https://zentroai.com/",
+      "title": "Zentro AI — Agents & Automation",
+      "description": "Agentes con IA + automatización n8n: WhatsApp, leads, turnos, reportes e integraciones.",
+      "image": "https://zentroai.com/assets/img/logo.png"
+    },
+    "schema": {
+      "name": "Zentro AI",
+      "description": "Agentes con IA + automatización n8n: WhatsApp, leads, turnos, reportes e integraciones.",
+      "url": "https://zentroai.com",
+      "logo": "https://zentroai.com/assets/img/logo.png",
+      "telephone": "+54-9-379-426-1676",
+      "email": "zentro.auto.ai@gmail.com",
+      "instagram": "https://instagram.com/zentroai"
+    }
+  },
+  "brand": {
+    "name": "Zentro AI",
+    "tagline": "Agents & Automation"
+  },
+  "navigation": {
+    "skipLink": "Saltar al contenido principal",
+    "menu": "Menú",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "sections": "Secciones",
+    "mobileMenu": "Menú móvil",
+    "links": {
+      "ofrecemos": "Qué ofrecemos",
+      "paraQuien": "Para quién",
+      "comoTrabajamos": "Cómo trabajamos",
+      "contacto": "Contacto",
+      "solicitarDemo": "Solicitar demo"
+    }
+  },
+  "hero": {
+    "kicker": "Agentes con IA + automatización n8n (end-to-end)",
+    "title": "Zentro AI",
+    "subtitle": "Agentes \"nativos\" que venden, atienden y operan 24/7 (WhatsApp, leads, turnos y reportes)",
+    "lead": "Diseñamos e implementamos <b>agentes conversacionales</b> con <b>LangChain</b> y modelos como <b>ChatGPT</b> / <b>Gemini</b>, conectados a tu operación real mediante <b>n8n</b>. Resultado: menos tareas manuales, menos errores y más conversiones.",
+    "actions": {
+      "whatsapp": "Contactar por WhatsApp",
+      "verSoluciones": "Ver soluciones",
+      "copiarEmail": "Copiar email",
+      "emailCopiado": "Email copiado"
+    },
+    "metrics": {
+      "ariaLabel": "Beneficios clave",
+      "atencion24": {
+        "title": "Atención + ventas 24/7",
+        "description": "Agente WhatsApp con reglas, catálogos, handoff a humano y seguimiento automático."
+      },
+      "leads": {
+        "title": "Leads con scoring",
+        "description": "Captura, clasificación (cold/warm/hot) y derivación a CRM/Sheets con trazabilidad."
+      },
+      "integracion": {
+        "title": "Integración real",
+        "description": "Conectamos herramientas (Sheets/CRM/Calendario) para operar sin fricción."
+      }
+    },
+    "logoAlt": "Logo de Zentro AI - Agentes con Inteligencia Artificial y Automatización"
+  },
+  "ofrecemos": {
+    "title": "⚡ Qué ofrecemos",
+    "subtitle": "Paquetes diseñados para venderse fácil: problemas reales, impacto claro y mantenimiento simple.",
+    "cards": [
+      {
+        "icon": "🤖",
+        "title": "1) Asistente de ventas por WhatsApp con IA (24/7)",
+        "description": "Agente con LLM + reglas de negocio: responde FAQs, califica interés, envía info, deriva a humano y hace seguimiento.",
+        "pill": "Ideal: retail, servicios, reservas"
+      },
+      {
+        "icon": "🎯",
+        "title": "2) Captura y calificación automática de leads",
+        "description": "Integramos formularios/IG/ads: enriquecimiento, scoring (cold/warm/hot) y carga automática a Sheets/CRM.",
+        "pill": "Ideal: marketing + ventas"
+      },
+      {
+        "icon": "📅",
+        "title": "3) Turnos y reservas automatizadas",
+        "description": "Agenda, confirma y reprograma. Evita doble reserva. Recordatorios automáticos para reducir no-shows.",
+        "pill": "Ideal: clínicas, peluquerías, estudios"
+      },
+      {
+        "icon": "📊",
+        "title": "4) Reportes automáticos para dueños/gerentes",
+        "description": "Consolidación + resumen con IA. Reportes diarios/semanales por WhatsApp/email con alertas cuando algo se desvía.",
+        "pill": "Ideal: control y decisiones rápidas"
+      },
+      {
+        "icon": "🔗",
+        "title": "5) Integración entre sistemas (el \"pegamento\")",
+        "description": "Sincronizamos herramientas que no hablan entre sí (catálogo, CRM, Sheets, calendario). Menos carga manual, menos errores.",
+        "pill": "Ideal: operaciones y backoffice"
+      },
+      {
+        "icon": "🧠",
+        "title": "Agentes \"nativos\" con LangChain",
+        "description": "Diseño de herramientas (tools), memoria, guardrails y handoff humano. El agente no \"chatea\": <b>ejecuta</b> en tus sistemas.",
+        "pill": "LLMs: ChatGPT / Gemini"
+      }
+    ]
+  },
+  "paraQuien": {
+    "title": "👥 Para quién es esto",
+    "subtitle": "Si estás creciendo y la operación te come tiempo, estas automatizaciones son el multiplicador.",
+    "idealPara": {
+      "title": "Ideal para",
+      "items": [
+        {
+          "title": "Emprendedores y marcas",
+          "description": "Que necesitan vender y responder más rápido sin contratar más gente."
+        },
+        {
+          "title": "Tiendas online",
+          "description": "Que quieren WhatsApp + catálogo + seguimiento y trazabilidad de leads."
+        },
+        {
+          "title": "Servicios con turnos",
+          "description": "Que necesitan reservas, confirmaciones y recordatorios automáticos."
+        },
+        {
+          "title": "Equipos chicos",
+          "description": "Que quieren integrar herramientas sin depender de desarrollo a medida eterno."
+        }
+      ]
+    },
+    "problemas": {
+      "title": "Qué problema resolvemos",
+      "items": [
+        {
+          "title": "Mensajes sin responder",
+          "description": "El agente responde, califica y deriva. No se pierden oportunidades."
+        },
+        {
+          "title": "Procesos manuales",
+          "description": "Automatizamos: captura → registro → seguimiento → reporte."
+        },
+        {
+          "title": "Datos desordenados",
+          "description": "Unificamos la fuente: Sheets/CRM/calendario con consistencia."
+        },
+        {
+          "title": "Falta de visibilidad",
+          "description": "Reportes automáticos con alertas: control sin estar encima."
+        }
+      ]
+    }
+  },
+  "comoTrabajamos": {
+    "title": "🧩 Cómo trabajamos",
+    "subtitle": "Proceso corto y ejecutable: demo rápida, implementación por etapas y mejoras continuas.",
+    "cards": [
+      {
+        "icon": "1",
+        "title": "Diagnóstico (30–45 min)",
+        "description": "Definimos objetivo, canales (WhatsApp/IG/web), datos disponibles y cómo se mide el éxito.",
+        "pill": "Salida: plan + quick wins"
+      },
+      {
+        "icon": "2",
+        "title": "Demo funcional",
+        "description": "Prototipo con tu caso (no humo): flujos n8n + agente con prompts/guardrails y handoff.",
+        "pill": "Salida: demo en vivo"
+      },
+      {
+        "icon": "3",
+        "title": "Producción + monitoreo",
+        "description": "Deploy, logging básico, métricas (leads, conversión, tiempos) y ajustes por aprendizaje real.",
+        "pill": "Salida: operación estable"
+      }
+    ]
+  },
+  "contacto": {
+    "title": "📩 Contacto",
+    "subtitle": "Contanos tu caso. Te proponemos una automatización concreta con impacto medible (y una demo si aplica).",
+    "canales": {
+      "title": "Canales",
+      "email": {
+        "label": "Email",
+        "value": "zentro.auto.ai@gmail.com",
+        "href": "mailto:zentro.auto.ai@gmail.com"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "value": "+54 9 379 426 1676",
+        "href": "https://wa.me/5493794261676"
+      },
+      "instagram": {
+        "label": "Instagram",
+        "value": "@zentroai",
+        "href": "https://instagram.com/zentroai"
+      },
+      "actions": {
+        "abrirWhatsapp": "Abrir WhatsApp",
+        "enviarEmail": "Enviar email",
+        "copiarEmail": "Copiar email"
+      }
+    },
+    "requisitos": {
+      "title": "Qué necesitamos de vos (mínimo)",
+      "items": [
+        {
+          "title": "Canales",
+          "description": "WhatsApp / Instagram / Web (cuáles usás y cuál te importa más)."
+        },
+        {
+          "title": "Oferta",
+          "description": "Qué vendés, precios aproximados, objeciones frecuentes."
+        },
+        {
+          "title": "Herramientas",
+          "description": "Si usás Sheets/CRM/Calendario/catálogo y dónde está la data."
+        },
+        {
+          "title": "Objetivo",
+          "description": "Ej: más leads, menos no-shows, más cierre por WhatsApp, reportes automáticos."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "politica": {
+      "title": "⚖️ Política de uso",
+      "text": "Zentro AI no comercializa productos físicos ni ofrece servicios prohibidos por las políticas de Meta. Nos enfocamos en soluciones tecnológicas para automatización creativa y comercial, respetando las normativas vigentes."
+    }
+  },
+  "js": {
+    "serviceWorker": {
+      "registered": "Service Worker registrado:",
+      "error": "Error al registrar Service Worker:"
+    }
+  }
+}
+

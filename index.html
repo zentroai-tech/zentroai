@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zentro AI - Agents & Automation. Agentes con IA + automatización n8n: WhatsApp, leads, turnos, reportes e integraciones.">
+  <meta name="theme-color" content="#060912">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <!-- Open Graph y Twitter Cards se actualizan dinámicamente desde content.json -->
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:locale" content="es_ES">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="">
+  <meta property="twitter:title" content="">
+  <meta property="twitter:description" content="">
+  <meta property="twitter:image" content="">
+  
+  <title>Zentro AI — Agents & Automation</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/img/icono.png">
+  
+  <!-- Schema.org JSON-LD (se actualiza dinámicamente desde content.json) -->
+  <script type="application/ld+json">
+    {}
+  </script>
+</head>
+<body>
+  <!-- Skip link para accesibilidad -->
+  <a href="#inicio" class="skip-link" data-texto="navigation.skipLink">Saltar al contenido principal</a>
+
+  <!-- Backdrop para el drawer móvil -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+
+  <!-- Drawer móvil (menú lateral) -->
+  <aside class="drawer" id="mobileDrawer" aria-label="Menú móvil" role="dialog" aria-modal="true">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <strong data-texto="brand.name">Zentro AI</strong>
+        <span data-texto="brand.tagline">Agents & Automation</span>
+      </div>
+      <button class="drawer-close" type="button" id="drawerClose" data-texto="navigation.closeMenu" aria-label="Cerrar menú">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <a href="#ofrecemos" data-drawer-link data-texto="navigation.links.ofrecemos">Qué ofrecemos <span aria-hidden="true">→</span></a>
+      <a href="#para-quien" data-drawer-link data-texto="navigation.links.paraQuien">Para quién <span aria-hidden="true">→</span></a>
+      <a href="#como-trabajamos" data-drawer-link data-texto="navigation.links.comoTrabajamos">Cómo trabajamos <span aria-hidden="true">→</span></a>
+      <a href="#contacto" data-drawer-link data-texto="navigation.links.contacto">Contacto <span aria-hidden="true">→</span></a>
+      <a class="btn-primary" href="#contacto" data-drawer-link data-texto="navigation.links.solicitarDemo">Solicitar demo</a>
+    </div>
+  </aside>
+
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <!-- Logo del header: 48x48px, carga inmediata (above-the-fold) -->
+        <img src="assets/img/icono.png" alt="Zentro AI" class="logo" width="48" height="48" loading="eager" />
+        <div class="brand-title">
+          <strong data-texto="brand.name">Zentro AI</strong>
+          <span data-texto="brand.tagline">Agents & Automation</span>
+        </div>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#ofrecemos" data-texto="navigation.links.ofrecemos">Qué ofrecemos</a>
+        <a href="#para-quien" data-texto="navigation.links.paraQuien">Para quién</a>
+        <a href="#como-trabajamos" data-texto="navigation.links.comoTrabajamos">Cómo trabajamos</a>
+        <a href="#contacto" data-texto="navigation.links.contacto">Contacto</a>
+        <a class="btn-primary" href="#contacto" data-texto="navigation.links.solicitarDemo">Solicitar demo</a>
+      </nav>
+
+      <!-- Mobile menu button (hamburger) -->
+      <button class="menu-btn" type="button" id="menuBtn" aria-label="Abrir menú" aria-controls="mobileDrawer" aria-expanded="false">
+        <span class="menu-icon" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span data-texto="navigation.menu">Menú</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Hero Section: Primera impresión, carga inmediata -->
+    <section class="hero" id="inicio">
+      <div class="panel">
+        <div class="panel-inner">
+            <!-- Hero image: carga inmediata (above-the-fold), aspect ratio aproximado 16:9 -->
+            <!-- width/height explícitos para evitar CLS (Cumulative Layout Shift) -->
+            <div class="hero-logo-top">
+              <img src="assets/img/logo_wall.png" alt="Zentro AI" width="1028" height="300" loading="eager" />
+            </div>
+            <h1>
+              <span class="grad" data-texto="hero.title">Zentro AI</span><br />
+              <span data-texto="hero.subtitle">Agentes "nativos" que venden, atienden y operan 24/7 (WhatsApp, leads, turnos y reportes)</span>
+            </h1>
+            <p class="lead" data-texto="hero.lead" data-html="true">Diseñamos e implementamos <b>agentes conversacionales</b> con <b>LangChain</b> y modelos como <b>ChatGPT</b> / <b>Gemini</b>, conectados a tu operación real mediante <b>n8n</b>. Resultado: menos tareas manuales, menos errores y más conversiones.</p>
+            
+            <div class="hero-actions">
+              <a href="https://wa.me/5493794261676" class="btn btn-primary" target="_blank" rel="noopener" data-texto="hero.actions.whatsapp" data-href="contacto.canales.whatsapp.href">Contactar por WhatsApp</a>
+              <a href="#ofrecemos" class="btn btn-secondary" data-texto="hero.actions.verSoluciones">Ver soluciones</a>
+            </div>
+
+            <!-- Métricas clave: carga lazy (below-the-fold) -->
+            <div class="hero-metrics" role="list" aria-label="Beneficios clave" data-texto="hero.metrics.ariaLabel">
+              <div class="metric" role="listitem">
+                <strong data-texto="hero.metrics.atencion24.title">Atención + ventas 24/7</strong>
+                <span data-texto="hero.metrics.atencion24.description">Agente WhatsApp con reglas, catálogos, handoff a humano y seguimiento automático.</span>
+              </div>
+              <div class="metric" role="listitem">
+                <strong data-texto="hero.metrics.leads.title">Leads con scoring</strong>
+                <span data-texto="hero.metrics.leads.description">Captura, clasificación (cold/warm/hot) y derivación a CRM/Sheets con trazabilidad.</span>
+              </div>
+              <div class="metric" role="listitem">
+                <strong data-texto="hero.metrics.integracion.title">Integración real</strong>
+                <span data-texto="hero.metrics.integracion.description">Conectamos herramientas (Sheets/CRM/Calendario) para operar sin fricción.</span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Qué ofrecemos -->
+    <section id="ofrecemos">
+      <div class="section-title">
+        <div>
+          <h2 data-texto="ofrecemos.title">⚡ Qué ofrecemos</h2>
+          <p data-texto="ofrecemos.subtitle">Paquetes diseñados para venderse fácil: problemas reales, impacto claro y mantenimiento simple.</p>
+        </div>
+      </div>
+
+      <div class="cards" role="list">
+        <article class="card" role="listitem" data-texto-card="ofrecemos">
+          <div class="icon" aria-hidden="true" data-texto-card-icon>🤖</div>
+          <h3 data-texto-card-title>1) Asistente de ventas por WhatsApp con IA (24/7)</h3>
+          <p data-texto-card-desc>Agente con LLM + reglas de negocio: responde FAQs, califica interés, envía info, deriva a humano y hace seguimiento.</p>
+          <div class="pill" data-texto-card-pill>Ideal: retail, servicios, reservas</div>
+        </article>
+
+        <article class="card" role="listitem" data-texto-card="ofrecemos">
+          <div class="icon" aria-hidden="true" data-texto-card-icon>🎯</div>
+          <h3 data-texto-card-title>2) Captura y calificación automática de leads</h3>
+          <p data-texto-card-desc>Integramos formularios/IG/ads: enriquecimiento, scoring (cold/warm/hot) y carga automática a Sheets/CRM.</p>
+          <div class="pill" data-texto-card-pill>Ideal: marketing + ventas</div>
+        </article>
+
+        <article class="card" role="listitem" data-texto-card="ofrecemos">
+          <div class="icon" aria-hidden="true" data-texto-card-icon>📅</div>
+          <h3 data-texto-card-title>3) Turnos y reservas automatizadas</h3>
+          <p data-texto-card-desc>Agenda, confirma y reprograma. Evita doble reserva. Recordatorios automáticos para reducir no-shows.</p>
+          <div class="pill" data-texto-card-pill>Ideal: clínicas, peluquerías, estudios</div>
+        </article>
+
+        <article class="card" role="listitem" data-texto-card="ofrecemos">
+          <div class="icon" aria-hidden="true" data-texto-card-icon>📊</div>
+          <h3 data-texto-card-title>4) Reportes automáticos para dueños/gerentes</h3>
+          <p data-texto-card-desc>Consolidación + resumen con IA. Reportes diarios/semanales por WhatsApp/email con alertas cuando algo se desvía.</p>
+          <div class="pill" data-texto-card-pill>Ideal: control y decisiones rápidas</div>
+        </article>
+
+        <article class="card" role="listitem" data-texto-card="ofrecemos">
+          <div class="icon" aria-hidden="true" data-texto-card-icon>🔗</div>
+          <h3 data-texto-card-title>5) Integración entre sistemas (el "pegamento")</h3>
+          <p data-texto-card-desc>Sincronizamos herramientas que no hablan entre sí (catálogo, CRM, Sheets, calendario). Menos carga manual, menos errores.</p>
+          <div class="pill" data-texto-card-pill>Ideal: operaciones y backoffice</div>
+        </article>
+
+        <article class="card" role="listitem" data-texto-card="ofrecemos">
+          <div class="icon" aria-hidden="true" data-texto-card-icon>🧠</div>
+          <h3 data-texto-card-title>Agentes "nativos" con LangChain</h3>
+          <p data-texto-card-desc data-html="true">Diseño de herramientas (tools), memoria, guardrails y handoff humano. El agente no "chatea": <b>ejecuta</b> en tus sistemas.</p>
+          <div class="pill" data-texto-card-pill>LLMs: ChatGPT / Gemini</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="para-quien">
+      <div class="section-title">
+        <div>
+          <h2 data-texto="paraQuien.title">👥 Para quién es esto</h2>
+          <p data-texto="paraQuien.subtitle">Si estás creciendo y la operación te come tiempo, estas automatizaciones son el multiplicador.</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-inner">
+            <h3 class="section-subtitle" data-texto="paraQuien.idealPara.title">Ideal para</h3>
+            <ul class="list">
+              <li class="li" data-texto-list="idealPara">
+                <div class="check" aria-hidden="true">✓</div>
+                <div>
+                  <b data-texto-list-title>Emprendedores y marcas</b>
+                  <span data-texto-list-desc>Que necesitan vender y responder más rápido sin contratar más gente.</span>
+                </div>
+              </li>
+              <li class="li" data-texto-list="idealPara">
+                <div class="check" aria-hidden="true">✓</div>
+                <div>
+                  <b data-texto-list-title>Tiendas online</b>
+                  <span data-texto-list-desc>Que quieren WhatsApp + catálogo + seguimiento y trazabilidad de leads.</span>
+                </div>
+              </li>
+              <li class="li" data-texto-list="idealPara">
+                <div class="check" aria-hidden="true">✓</div>
+                <div>
+                  <b data-texto-list-title>Servicios con turnos</b>
+                  <span data-texto-list-desc>Que necesitan reservas, confirmaciones y recordatorios automáticos.</span>
+                </div>
+              </li>
+              <li class="li" data-texto-list="idealPara">
+                <div class="check" aria-hidden="true">✓</div>
+                <div>
+                  <b data-texto-list-title>Equipos chicos</b>
+                  <span data-texto-list-desc>Que quieren integrar herramientas sin depender de desarrollo a medida eterno.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-inner">
+            <h3 class="section-subtitle" data-texto="paraQuien.problemas.title">Qué problema resolvemos</h3>
+            <ul class="list">
+              <li class="li" data-texto-list="problemas">
+                <div class="check" aria-hidden="true">✓</div>
+                <div>
+                  <b data-texto-list-title>Mensajes sin responder</b>
+                  <span data-texto-list-desc>El agente responde, califica y deriva. No se pierden oportunidades.</span>
+                </div>
+              </li>
+              <li class="li" data-texto-list="problemas">
+                <div class="check" aria-hidden="true">✓</div>
+                <div>
+                  <b data-texto-list-title>Procesos manuales</b>
+                  <span data-texto-list-desc>Automatizamos: captura → registro → seguimiento → reporte.</span>
+                </div>
+              </li>
+              <li class="li" data-texto-list="problemas">
+                <div class="check" aria-hidden="true">✓</div>
+                <div>
+                  <b data-texto-list-title>Datos desordenados</b>
+                  <span data-texto-list-desc>Unificamos la fuente: Sheets/CRM/calendario con consistencia.</span>
+                </div>
+              </li>
+              <li class="li" data-texto-list="problemas">
+                <div class="check" aria-hidden="true">✓</div>
+                <div>
+                  <b data-texto-list-title>Falta de visibilidad</b>
+                  <span data-texto-list-desc>Reportes automáticos con alertas: control sin estar encima.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-trabajamos">
+      <div class="section-title">
+        <div>
+          <h2 data-texto="comoTrabajamos.title">🧩 Cómo trabajamos</h2>
+          <p data-texto="comoTrabajamos.subtitle">Proceso corto y ejecutable: demo rápida, implementación por etapas y mejoras continuas.</p>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step" data-texto-step="comoTrabajamos">
+          <div class="step-number" aria-hidden="true" data-texto-step-number>1</div>
+          <h3 data-texto-step-title>Diagnóstico (30–45 min)</h3>
+          <p data-texto-step-desc>Definimos objetivo, canales (WhatsApp/IG/web), datos disponibles y cómo se mide el éxito.</p>
+        </div>
+
+        <div class="step" data-texto-step="comoTrabajamos">
+          <div class="step-number" aria-hidden="true" data-texto-step-number>2</div>
+          <h3 data-texto-step-title>Demo funcional</h3>
+          <p data-texto-step-desc>Prototipo con tu caso (no humo): flujos n8n + agente con prompts/guardrails y handoff.</p>
+        </div>
+
+        <div class="step" data-texto-step="comoTrabajamos">
+          <div class="step-number" aria-hidden="true" data-texto-step-number>3</div>
+          <h3 data-texto-step-title>Producción + monitoreo</h3>
+          <p data-texto-step-desc>Deploy, logging básico, métricas (leads, conversión, tiempos) y ajustes por aprendizaje real.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="section-title">
+        <div>
+          <h2 data-texto="contacto.title">📬 Contacto</h2>
+          <p data-texto="contacto.subtitle">¿Listo para automatizar? Escribinos y coordinamos una demo.</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-inner">
+            <h3 class="section-subtitle" data-texto="contacto.canales.title">Canales</h3>
+            <div class="contact-channels">
+              <a href="" class="contact-link" target="_blank" rel="noopener" data-href="contacto.canales.whatsapp.href">
+                <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                <div>
+                  <strong data-texto="contacto.canales.whatsapp.label">WhatsApp</strong>
+                  <span data-texto="contacto.canales.whatsapp.value">+54 9 379 426 1676</span>
+                </div>
+              </a>
+              <a href="" class="contact-link" data-href="contacto.canales.email.href">
+                <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.12a2.78 2.78 0 0 1-3.93 0L2 7"></path>
+                </svg>
+                <div>
+                  <strong data-texto="contacto.canales.email.label">Email</strong>
+                  <span data-texto="contacto.canales.email.value">zentro.auto.ai@gmail.com</span>
+                </div>
+              </a>
+              <a href="" class="contact-link" target="_blank" rel="noopener" data-href="contacto.canales.instagram.href">
+                <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <div>
+                  <strong data-texto="contacto.canales.instagram.label">Instagram</strong>
+                  <span data-texto="contacto.canales.instagram.value">@zentroai</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-inner">
+            <h3 class="section-subtitle" data-texto="contacto.form.title">Formulario</h3>
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" data-texto="contacto.form.name">Nombre</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="email" data-texto="contacto.form.email">Email</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="message" data-texto="contacto.form.message">Mensaje</label>
+                <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" data-texto="contacto.form.submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p data-texto="footer.copyright">© 2024 Zentro AI. Todos los derechos reservados.</p>
+      <nav class="footer-nav" aria-label="Enlaces del footer">
+        <a href="#inicio" data-texto="footer.links.inicio">Inicio</a>
+        <a href="#ofrecemos" data-texto="footer.links.ofrecemos">Qué ofrecemos</a>
+        <a href="#contacto" data-texto="footer.links.contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Cargador de contenido desde JSON -->
+  <script src="assets/js/content_loader.js"></script>
+
+  <!-- Scripts principales -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/mobile-menu.js"></script>
+
+  <!-- Service Worker Registration: PWA offline support -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then((registration) => {
+            // Service Worker registrado correctamente
+          })
+          .catch((error) => {
+            // Error al registrar Service Worker (no crítico)
+          });
+      });
+    }
+  </script>
+
+</body>
+</html>
