@@ -96,10 +96,25 @@
     backdrop.addEventListener("click", backdropHandler);
     backdrop.addEventListener("touchstart", backdropHandler, { passive: true });
 
-    // Cerrar drawer al hacer click en cualquier link interno
+    // Cerrar drawer al hacer click en cualquier link interno y navegar a la sección
     drawerLinks.forEach((a) => {
       const handler = function(e) {
-        closeDrawer();
+        e.preventDefault(); // Prevenir comportamiento por defecto
+        const href = a.getAttribute('href');
+        
+        if (href && href !== '#' && href !== '#inicio') {
+          closeDrawer(); // Cerrar drawer primero
+          
+          // Esperar a que el drawer se cierre antes de hacer scroll
+          setTimeout(() => {
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 200); // Delay para que la animación del drawer termine
+        } else {
+          closeDrawer();
+        }
       };
       drawerLinkHandlers.push({ element: a, handler: handler });
       a.addEventListener("click", handler);

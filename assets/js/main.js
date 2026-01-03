@@ -40,45 +40,13 @@
     }, 3000);
   }
 
-  /**
-   * Validación y envío del formulario de contacto (fake)
-   */
-  function initContactForm() {
-    const form = document.getElementById('contactForm');
-    if (!form) return;
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const name = this.querySelector('#name').value.trim();
-      const email = this.querySelector('#email').value.trim();
-      const message = this.querySelector('#message').value.trim();
-      
-      if (!name || !email || !message) {
-        showToast('Por favor, completa todos los campos.', 'error');
-        return;
-      }
-      
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showToast('Por favor, ingresa un email válido.', 'error');
-        return;
-      }
-      
-      // Toast de éxito
-      showToast('Mensaje enviado (demo)', 'info');
-      this.reset();
-    });
-  }
-
   // Inicializar cuando el DOM esté listo
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function() {
       initSmoothScroll();
-      initContactForm();
     });
   } else {
     initSmoothScroll();
-    initContactForm();
   }
 })();
 

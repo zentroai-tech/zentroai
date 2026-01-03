@@ -271,14 +271,14 @@
       }
     });
 
-    // Lista de requisitos de contacto
-    const itemsRequisitos = document.querySelectorAll('[data-texto-list="requisitos"]');
+    // Requisitos de contacto (usando data-texto-requisito)
+    const itemsRequisitos = document.querySelectorAll('[data-texto-requisito="contacto.requisitos"]');
     itemsRequisitos.forEach((item, index) => {
       if (content.contacto.requisitos.items[index]) {
         const itemData = content.contacto.requisitos.items[index];
-        const titleEl = item.querySelector('[data-texto-list-title]');
+        const titleEl = item.querySelector('[data-texto-requisito-title]');
         if (titleEl) titleEl.textContent = itemData.title;
-        const descEl = item.querySelector('[data-texto-list-desc]');
+        const descEl = item.querySelector('[data-texto-requisito-desc]');
         if (descEl) descEl.textContent = itemData.description;
       }
     });
