@@ -13,6 +13,7 @@ const getBaseUrl = () => {
 const BASE_URL = getBaseUrl();
 const urlsToCache = [
   BASE_URL === '/' ? 'index.html' : BASE_URL + 'index.html',
+  BASE_URL === '/' ? 'politica-privacidad.html' : BASE_URL + 'politica-privacidad.html',
   BASE_URL === '/' ? 'assets/css/styles.css' : BASE_URL + 'assets/css/styles.css',
   BASE_URL === '/' ? 'assets/img/logo.png' : BASE_URL + 'assets/img/logo.png',
   BASE_URL === '/' ? 'assets/img/icono.png' : BASE_URL + 'assets/img/icono.png',
